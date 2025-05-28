@@ -1,0 +1,87 @@
+% ============================================================================================ %
+%                                                                                              %
+%                     @@@@@@@   @@   @@@@@@@@@@@@@        @@@@@@@ @@@@@@                       %
+%                        @@@    @@@   @    @@@   @@           @@@   @@                         %
+%                        @@@   @@ @@ @@    @@@  @@@@@@@@@@@@   @@@ @@                          %
+%                        @@@   @@@@@@      @@@    @@@     @@     @@@                           %
+%                        @@@  @     @@     @@@    @@@      @@   @@@@@                          %
+%                        @@@ @@@ @@@@@@    @@@    @@@   @      @@  @@@                         %
+%                        @@@    @@         @@@    @@@@@@@     @@    @@@                        %
+%                      @@@@@@@@@@@      @@@@@@@@  @@@   @  @@@@@@   @@@@@@                     %
+%                                                 @@@      @@                                  %
+%                                               @@@@@@@@@@@@                                   %
+%                                                                                              %
+% ============================================================================================ %
+%                                                                                              %
+%                   < MiKTex + VS Code + LaTex Workshop + LaTeX Utilities >                    %
+%                                                                                              %
+% Для компиляции требуется движок XeLaTex. Чтобы установить его по-умолчанию + сохранять все   %
+% файлы компиляции в отдельную папку "./tmp/" - в settings.json добавить:                      %
+%                                                                                              %
+%        "latex-workshop.latex.tools": [                                                       %
+%            {                                                                                 %
+%                "name": "latexmk",                                                            %
+%                "command": "latexmk",                                                         %
+%                "args": [                                                                     %
+%                    "-synctex=1",                                                             %
+%                    "-interaction=nonstopmode",                                               %
+%                    "-file-line-error",                                                       %
+%                    "-xelatex",                                                               %
+%                    "-auxdir=./tmp",                                                          %
+%                    "-outdir=./",                                                             %
+%                    "%DOC%"                                                                   %
+%                ],                                                                            %
+%                "env": {}                                                                     %
+%            }                                                                                 %
+%            ],                                                                                %
+%            "latex-workshop.latex.recipes": [                                                 %
+%                {                                                                             %
+%                    "name": "latexmk (xelatex)",                                              %
+%                    "tools": ["latexmk"]                                                      %
+%                }                                                                             %
+%            ],                                                                                %
+%            "latex-workshop.latex.recipe.default": "latexmk (xelatex)"                        %
+%                                                                                              %
+% Если возникают проблемы с polyglossia - нужно его обновить (а лучше - сразу и все пакеты).   %
+% Также нужно установить пакеты cm-unicode и cm-super.                                         %
+%                                                                                              %
+% ============================================================================================ %
+
+
+% Математика
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% Шрифты и языки
+\usepackage{fontspec}
+\usepackage{polyglossia}
+
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+
+\setmainlanguage{russian}
+\setotherlanguage{english}
+
+% Остальные пакеты
+\usepackage{mmap}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{enumerate}
+
+% Геометрия страницы
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ headheight=15pt,
+ total={170mm,237mm},
+ left=25mm,
+ top=30mm,
+}
+
+\usepackage[margin=5pt,font={small, singlespacing}, labelfont={small}, justification=centering, labelsep=period]{caption}
+\captionsetup{belowskip=0pt}
+
