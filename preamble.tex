@@ -42,17 +42,17 @@
 %            ],                                                                                %
 %            "latex-workshop.latex.recipe.default": "latexmk (xelatex)"                        %
 %                                                                                              %
-% Если возникают проблемы с polyglossia - нужно его обновить (а лучше - сразу и все пакеты).   %
+% Если возникают проблемы с polyglossia - нужно его обновить (а лучше - сразу все пакеты).     %
 % Также нужно установить пакеты cm-unicode и cm-super.                                         %
 %                                                                                              %
 % ============================================================================================ %
 
 
 % Математика
-\usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{amsfonts}
 
 % Шрифты и языки
 \usepackage{fontspec}
@@ -65,23 +65,182 @@
 \setmainlanguage{russian}
 \setotherlanguage{english}
 
-% Остальные пакеты
-\usepackage{mmap}
-\usepackage{array}
-\usepackage{multicol}
-\usepackage{xcolor}
-\usepackage{enumerate}
-
 % Геометрия страницы
 \usepackage{geometry}
 \geometry{
  a4paper,
  headheight=15pt,
- total={170mm,237mm},
+ total={170mm,247mm},
  left=25mm,
- top=30mm,
+ top=25mm
 }
 
+% Подписи
 \usepackage[margin=5pt,font={small, singlespacing}, labelfont={small}, justification=centering, labelsep=period]{caption}
 \captionsetup{belowskip=0pt}
+
+% Настройка заголовков
+\usepackage{titlesec}
+
+\titleformat{\section}
+    {\normalfont\Large\bfseries\centering}
+    {\thesection.}
+    {1em}
+    {}
+
+% Остальные пакеты
+\usepackage{array}
+\usepackage{enumerate}
+\usepackage{float}
+% \usepackage{hyperref}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+% Оформление теорем, определений, лемм и доказательств
+\usepackage[framemethod=TikZ]{mdframed}
+
+% Теоремы
+\newcounter{theo}[section]
+\setcounter{theo}{0}
+\renewcommand{\thetheo}{\arabic{section}.\arabic{theo}}
+
+\newenvironment{theo}[2][]{
+    \refstepcounter{theo}
+    \ifstrempty{#1}{
+        \mdfsetup{
+            frametitle={
+                \tikz[baseline=(current bounding box.east),outer sep=0pt]
+                \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
+                {\strut Теорема~\thetheo};
+            }
+        }
+    }{
+        \mdfsetup{
+            frametitle={
+                \tikz[baseline=(current bounding box.east),outer sep=0pt]
+                \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
+                {\strut Теорема~\thetheo:~#1};
+            }
+        }
+    }
+    \mdfsetup{
+        innertopmargin=8pt,
+        linecolor=gray!50,
+        linewidth=1pt,
+        topline=true,
+        frametitleaboveskip=\dimexpr-\ht\strutbox\relax,
+        backgroundcolor=none
+    }
+    \begin{mdframed}[]\relax
+    \label{#2}
+}{\end{mdframed}}
+
+% Определения
+\newcounter{dfn}[section]
+\setcounter{dfn}{0}
+\renewcommand{\thedfn}{\arabic{section}.\arabic{dfn}}
+
+\newenvironment{dfn}[2][]{
+    \refstepcounter{dfn}
+    \ifstrempty{#1}{
+        \mdfsetup{
+            frametitle={
+                \tikz[baseline=(current bounding box.east),outer sep=0pt]
+                \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
+                {\strut Определение~\thedfn};
+            }
+        }
+    }{
+        \mdfsetup{
+            frametitle={
+                \tikz[baseline=(current bounding box.east),outer sep=0pt]
+                \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
+                {\strut Определение~\thedfn:~#1};
+            }
+        }
+    }
+    \mdfsetup{
+        innertopmargin=8pt,
+        linecolor=gray!50,
+        linewidth=1pt,
+        topline=true,
+        frametitleaboveskip=\dimexpr-\ht\strutbox\relax,
+        backgroundcolor=none
+    }
+    \begin{mdframed}[]\relax
+    \label{#2}
+}{\end{mdframed}}
+
+% Леммы
+\newcounter{lem}[section]
+\setcounter{lem}{0}
+\renewcommand{\thelem}{\arabic{section}.\arabic{lem}}
+
+\newenvironment{lem}[2][]{
+    \refstepcounter{lem}
+    \ifstrempty{#1}{
+        \mdfsetup{
+            frametitle={
+                \tikz[baseline=(current bounding box.east),outer sep=0pt]
+                \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
+                {\strut Лемма~\thelem};
+            }
+        }
+    }{
+        \mdfsetup{
+            frametitle={
+                \tikz[baseline=(current bounding box.east),outer sep=0pt]
+                \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
+                {\strut Лемма~\thelem:~#1};
+            }
+        }
+    }
+    \mdfsetup{
+        innertopmargin=8pt,
+        linecolor=gray!50,
+        linewidth=1pt,
+        topline=true,
+        frametitleaboveskip=\dimexpr-\ht\strutbox\relax,
+        backgroundcolor=none
+    }
+    \begin{mdframed}[]\relax
+    \label{#2}
+}{\end{mdframed}}
+
+% Доказательства
+\newcounter{prf}[section]
+\setcounter{prf}{0}
+\renewcommand{\theprf}{\arabic{section}.\arabic{prf}}
+
+\newenvironment{prf}[2][]{
+    \refstepcounter{prf}
+    \ifstrempty{#1}{
+        \mdfsetup{
+            frametitle={
+                \tikz[baseline=(current bounding box.east),outer sep=0pt]
+                \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
+                {\strut Доказательство~\theprf};
+            }
+        }
+    }{
+        \mdfsetup{
+            frametitle={
+                \tikz[baseline=(current bounding box.east),outer sep=0pt]
+                \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
+                {\strut Доказательство~\theprf:~#1};
+            }
+        }
+    }
+    \mdfsetup{
+        innertopmargin=8pt,
+        linecolor=gray!50,
+        linewidth=1pt,
+        topline=true,
+        frametitleaboveskip=\dimexpr-\ht\strutbox\relax,
+        backgroundcolor=none
+    }
+    \begin{mdframed}[]\relax
+    \label{#2}
+}{\end{mdframed}}
 
