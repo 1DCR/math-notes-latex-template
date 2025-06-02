@@ -2,7 +2,7 @@
 
 Это небольшая демонстрация настроенных окружений для теорем, доказательств и прочего.
 
-\begin{thm}[Линейная зависимость двух векторов]{}
+\begin{thm}[Линейная зависимость двух векторов]{example_thm}
 Два вектора $\mathbf{u}$ и $\mathbf{v}$ линейно зависимы тогда и только тогда, когда:
 \begin{equation*}
     \exists \lambda \in \mathbb{R} \colon \mathbf{u} = \lambda \mathbf{v} \quad \text{или} \quad \mathbf{v} = \lambda \mathbf{u}.
@@ -10,7 +10,7 @@
 
 \end{thm}
 
-\begin{prf}[]{}
+\begin{prf}[]{example_prf}
 Необходимость: Если \( \mathbf{u} \) и \( \mathbf{v} \) линейно зависимы, то существуют коэффициенты $\alpha, \beta \in \mathbb{R}$, не равные нулю одновременно, такие что:
 \begin{equation*}
     \alpha \mathbf{u} + \beta \mathbf{v} = \mathbf{0}.
@@ -26,12 +26,12 @@
 что означает линейную зависимость $\mathbf{u}$ и $\mathbf{v}$ (коэффициенты $1$ и $-\lambda$ не равны нулю одновременно).
 \end{prf}
 
-\begin{lem}[О линейной зависимости]{}
+\begin{lem}[О линейной зависимости]{example_lem}
     Если в наборе векторов $\mathbf{v}_1, \mathbf{v}_2, \dots, \mathbf{v}_k$ один из векторов является линейной комбинацией остальных, то этот набор линейно зависим.
 \end{lem}
 
 \newpage
-\begin{dfn}[Собственные вектор и значение]{}
+\begin{dfn}[Собственные вектор и значение]{example_dfn}
 Пусть $A$ - квадратная матрица размера $n \times n$.
 
 \begin{itemize}
