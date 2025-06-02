@@ -68,6 +68,18 @@ INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
+INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
@@ -152,9 +164,6 @@ INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
@@ -187,15 +196,6 @@ INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\generic\pgf\pgf.revision.
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\generic\pgf\pgf.revision.tex
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
 INPUT C:\Users\akara\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
@@ -320,6 +320,8 @@ OUTPUT c:\Users\akara\OneDrive\Рабочий стол\math-notes-latex-template
 INPUT .\chapters\01_chapter.tex
 INPUT .\chapters\01_chapter.tex
 INPUT chapters\01_chapter.tex
+INPUT .\figures\mandelbrot_set.png
+INPUT .\figures\mandelbrot_set.png
 INPUT c:\Users\akara\OneDrive\Рабочий стол\math-notes-latex-template\tmp\main.aux
 INPUT c:\Users\akara\OneDrive\Рабочий стол\math-notes-latex-template\tmp\main.out
 INPUT c:\Users\akara\OneDrive\Рабочий стол\math-notes-latex-template\tmp\main.out

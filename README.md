@@ -26,3 +26,12 @@
     in this example, prefixed with the section number.
   \end{dfn}
 ```
+
+
+```
+  \begin{figure}[h]
+    \includegraphics[width=15cm, angle=0]{@название_рисунка@.png}
+    \centering
+    \caption{@Подпись@}
+  \end{figure}
+```

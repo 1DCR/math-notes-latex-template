@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1748854055.09019 "tmp/main.xdv" "main.pdf" "main" 1748854055.45441 0
-  "tmp/main.xdv" 1748854054 27504 d47ceec9629e40040de95f2355d8eca0 "xelatex"
+["xdvipdfmx"] 1748872571.42252 "tmp/main.xdv" "main.pdf" "main" 1748872571.94284 0
+  "tmp/main.xdv" 1748872571 28560 49b19ed55e50ee873e47aa38a4d8c18e "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1748854051.42719 "c:/Users/akara/OneDrive/Рабочий стол/math-notes-latex-template/main.tex" "tmp/main.xdv" "main" 1748854055.44325 0
+["xelatex"] 1748872567.46665 "c:/Users/akara/OneDrive/Рабочий стол/math-notes-latex-template/main.tex" "tmp/main.xdv" "main" 1748872571.93351 0
   "C:/Users/akara/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1748391365 26876374 baba33aca3bc281709967ecdc40c0617 ""
   "C:/Users/akara/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Users/akara/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -165,13 +165,14 @@
   "C:/Users/akara/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/akara/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
   "c:/Users/akara/OneDrive/Рабочий стол/math-notes-latex-template/main.tex" 1748851998 225 f81b71537e3c484d589d3eab401aec7c ""
-  "chapters/01_chapter.tex" 1748854046 2934 4d6895cb770001ae856a9a089ee30f52 ""
+  "chapters/01_chapter.tex" 1748872566 3181 c27abd14d3ff24c82391d016fc3e3ebe ""
+  "figures/mandelbrot_set.png" 1748872194 75752 a45a9fd52c096aa8bbd76f7023c6576f ""
   "main.tex" 1748851998 225 f81b71537e3c484d589d3eab401aec7c ""
-  "preamble.tex" 1748853770 10428 a3b3a55f9d81467e8313c209dbfa80e5 ""
+  "preamble.tex" 1748872244 10502 566a7e3a00a3ca3d467b383a16a3fbc4 ""
   "title.tex" 1748851228 223 82a95b82fc7c38a084db5337384c107c ""
-  "tmp/main.aux" 1748854054 1016 06677befb9a71a9ea08bfbea7bc8b2f2 "xelatex"
-  "tmp/main.out" 1748854054 394 ce8e8a275ac3ca4eaa3e20969b23484f "xelatex"
-  "tmp/main.toc" 1748854054 211 b1213183441cd1126802705608263e80 "xelatex"
+  "tmp/main.aux" 1748872571 1242 00fe2ac12d0ca65eb45d5f75389f7927 "xelatex"
+  "tmp/main.out" 1748872571 394 ce8e8a275ac3ca4eaa3e20969b23484f "xelatex"
+  "tmp/main.toc" 1748872571 211 b1213183441cd1126802705608263e80 "xelatex"
   (generated)
   "tmp/main.aux"
   "tmp/main.log"
