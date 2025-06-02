@@ -2,11 +2,11 @@
 
 
 ```
-  \begin{theo}[Заголовок теоремы]{}
+  \begin{thm}[Заголовок теоремы]{}
     This is the text of the theorem\footnote{Footnote inside a theorem}.
     The counter is automatically assigned and, in this example,
     prefixed with the section number.
-  \end{theo}
+  \end{thm}
 ```
 ```
   \begin{lem}[Заголовок леммы]{}

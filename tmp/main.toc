@@ -1,3 +1,3 @@
 \xpg@aux {}{russian}
-\contentsline {section}{\numberline {1}@Название секции 1@}{2}{}%
-\contentsline {subsection}{\numberline {1.1}@Название подсекции 1@}{2}{}%
+\contentsline {section}{\numberline {1}@Название главы 1@}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}@Название подглавы 1@}{2}{subsection.1.1}%

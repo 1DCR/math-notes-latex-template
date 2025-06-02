@@ -92,7 +92,7 @@
 \usepackage{array}
 \usepackage{enumerate}
 \usepackage{float}
-% \usepackage{hyperref}
+\usepackage{hyperref}
 \usepackage{listings}
 \usepackage{multicol}
 \usepackage{xcolor}
@@ -101,18 +101,18 @@
 \usepackage[framemethod=TikZ]{mdframed}
 
 % Теоремы
-\newcounter{theo}[section]
-\setcounter{theo}{0}
-\renewcommand{\thetheo}{\arabic{section}.\arabic{theo}}
+\newcounter{thm}[section]
+\setcounter{thm}{0}
+\renewcommand{\thethm}{\arabic{section}.\arabic{thm}}
 
-\newenvironment{theo}[2][]{
-    \refstepcounter{theo}
+\newenvironment{thm}[2][]{
+    \refstepcounter{thm}
     \ifstrempty{#1}{
         \mdfsetup{
             frametitle={
                 \tikz[baseline=(current bounding box.east),outer sep=0pt]
                 \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
-                {\strut Теорема~\thetheo};
+                {\strut Теорема~\thethm};
             }
         }
     }{
@@ -120,7 +120,7 @@
             frametitle={
                 \tikz[baseline=(current bounding box.east),outer sep=0pt]
                 \node[draw=gray!50, line width=1pt, anchor=east, rectangle, fill=white]
-                {\strut Теорема~\thetheo:~#1};
+                {\strut Теорема~\thethm:~#1};
             }
         }
     }
